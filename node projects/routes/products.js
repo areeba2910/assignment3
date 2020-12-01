@@ -5,7 +5,7 @@ var Product = require("../models/product");
 router.get("/", async function(req, res, next) {
  let products = await Product.find();
  console.log(products);
-  res.render("products/list" , {title:"songs playlist" , products });
+  res.render("products/list" , {title:"songs playlist" , products: products });
 });
 
 module.exports = router;
