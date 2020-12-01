@@ -3,5 +3,5 @@ const productSchema = mongoose.Schema({
     name:String,
     price:String,
 });
-const product = mongoose.model("product" , productSchema);
+const product = mongoose.model("Product" , productSchema);
 module.exports = product;
